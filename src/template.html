@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+   <!-- whole-page container -->
+    <div class="container">
+         <!-- side menu -->
+        <div class="sidebar">
+            <div id="sidebar-title"> tododo </div>
+            <div class="menu-holder">
+                <div class="menu">
+                    <button id="all-tasks">All tasks</button>
+                    <button id="personal">Personal</button>
+                    <button id="home">Home</button>
+                    <button id="work">Work</button>
+                </div>
+            </div>
+        </div>
+        <!-- tasks go below -->
+        <div id="main-content"> 
+            
+
+            <ul id="main-tasks"> 
+
+            </ul>
+            <div class="button-holder">
+                <button class="modal-button"></button>
+                <button class= "clear-all"> Clear all </button>
+            </div>
+            
+        
+        </div>
+        
+      
+    </div>
+    
+
+
+    <!-- <dialog id="task-dialog"> 
+        <div class="dialog-header"> 
+            <button class="close-dialog"> X</button> 
+        </div>
+        <div class="dialog-main">
+            <div class="main-section">
+                <div id= "di-ti" class="dialog-title title dialog-task"> Sample title</div>
+                <div id= "di-desc" class="dialog-desc dialog-task"> Sample description  </div>
+                <div> textbox </div>
+                <form action="" id="comment-form">
+                    <div>
+                        <label for="task-comments"></label>
+                        <textarea name="task-comments" id="task-comments" row="4" cols="50" placeholder="Comment..."></textarea>
+                    </div>
+                    <div>
+                        <input type="submit" value="Comment">
+                    </div>
+                </form> 
+            </div>
+            <div class="sidebar"> 
+                <div>Category:</div>
+                <div id="category-value"></div>
+                <div>Due date:</div>
+                <div id="due-date-value"></div>
+                <div>Priority:</div>
+                <div id="priority-value"></div>    
+            </div>
+            
+        </div>
+    </dialog> -->
+    
+     <dialog> 
+        <div class="dialog-header"> 
+            <div>New task</div>
+            <button class="close-dialog"> X</button> 
+        </div>
+
+        <form action="#" method="dialog" class="new-book-form" id="new-task"> 
+
+            <div class="form-content">
+                <label for="title-input">Title:</label>
+                <input autofocus type="text" id="title-input" name="title-input" minlength="2" required>
+            </div>
+            <div class="form-content">
+                <label for="description-input">Description: </label>
+                <input type="text" id="description-input" name="description-input" minlength="2" >
+            </div>
+            <div class="form-content">
+                <label for="date-input">Date due: </label>
+                <input type="date" id="date-input" name="description-input">
+                <!-- this will be a date time local once embedded -->
+            </div>
+            <div class="form-content">
+                <label for="priority-input">Priority:</label>
+               <select name="priority-input" id="priority-input">
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+                <!-- <option value="urgent">Urgent</option> -->
+               </select>
+                <!-- will be number once scaffoled out -->
+            </div>
+            <div class="form-content">
+                <label for="category-input">Category:</label>
+                <input type="text" id="category-input" name="category-input">
+            </div>
+
+            <div>
+                <button type="submit" value="submit-task"> Save</button>
+            </div>
+        
+        </form>
+
+    </dialog>
+
+</body>
+</html>
